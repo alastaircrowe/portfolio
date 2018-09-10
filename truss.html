@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Truss Topology Optimization</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Alastair Crowe</span>
+								</a>
+
+							<!-- Nav -->
+							
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+				
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+                            <h3>Truss Topology Optimization</h3>
+                            <h4>University of Colorado<br> Spring 2018</h4>
+							
+                                 <p>The formulation of optimization problems can be a difficult process. Convex programming plugins like CVX help to formulate the matrixes needed to solve the problem. To understand what is happening under the hood of CVX, I solved a truss topology optimization problem without using it.  </p>
+                                 <p>To set boundaries for this truss system to be formed in I created a grid of 11x20 nodes. In these 220 nodes there is a possible 24.090 possible trusses. These trusses needed to support a downward force with three possible support locations subject to a cost function of my choosing. I tried two different cost functions. One to solely restricts the number of trusses given yield strength and area. The other cost function also penalizes long trusses. The resulting topology is radically different.</p>
+                                 <div class="row gtr-uniform">
+                                    
+                                        <div class="col-4"><span class="image fit"><img src="images/blank.jpg" alt="" /></span></div>
+                                        <div class="col-4"><span class="image fit"><img src="images/length.jpg" alt="" /></span></div>
+                                        <div class="col-4"><span class="image fit"><img src="images/weighted.jpg" alt="" /></span></div>
+                                    </div>
+                                    <p> </p>
+                                 <p>Without using a convex programmer like CVX, I had to create the code to form a 220 x ~48,000 matrix. By creating the matrices by hand for a smaller 2 x 4 node version of this problem, I was able to develop a code that scaled the problem to the full 11 x 20 problem. Solving this optimization problem gave me confidence that I could use these methods to solve a verity of other problems. (See  Handwritten Number Recognition and Sudoku Solver)</p>
+                                 
+                                   
+                                    
+                               
+						</div>
+					</div>
+
+				<!-- Footer -->
+                <footer id="footer">
+						<div class="inner">
+							
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="http://linkedin.com/in/alastaircrowe" class="icon style1 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="http://Instagram.com/alastaircrowe" class="icon style1 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="contact.html" class="icon style1 fa-envelope-o"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Alastair Crowe. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

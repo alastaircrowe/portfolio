@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Handwritten Number Recognition</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Alastair Crowe</span>
+								</a>
+
+							<!-- Nav -->
+							
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+				
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+                            <h3>Handwritten Number Recognition</h3>
+                            <h4>University of Colorado<br> Spring 2018</h4>
+							
+                                 <p>This program was an exercise in the application of convex optimization methods. Using 60,000 known hand written numbers, I was able to train my program to identify 10,000 unknown numbers with 94.7% accuracy. This was done by creating 45 hyperplanes that were created using a convex programing Matlab plugin called CVX. These hyperplanes separate data from the images of the numbers the is unique to each number. The power of these planes is that we can use them to identify which of the two data sets an unknown number is most similar to. 45 planes are needed because the hyperplane is only able to compare two data sets at a time. For instance 0 vs 1, 0 vs 2, and so on.  By using a directed acrylic graph, I was able to efficiently identify the unknown numbers by making enough comparisons to the hyperplanes. </p>
+                                 
+                                   
+                                    
+                               
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="http://linkedin.com/in/alastaircrowe" class="icon style1 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="http://Instagram.com/alastaircrowe" class="icon style1 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="alastaircrowe@gmail.com" class="icon style1 fa-envelope-o"><span class="label">Email</span></a></li>
+                                </ul>
+
+							</section>
+							<ul class="copyright">
+								<li>&copy; Alastair Crowe. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
